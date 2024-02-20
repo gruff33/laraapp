@@ -1,0 +1,118 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;230&lt;/x&gt;&lt;y&gt;120&lt;/y&gt;&lt;w&gt;190&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;-&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;170;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;230&lt;/x&gt;&lt;y&gt;120&lt;/y&gt;&lt;w&gt;190&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;-&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;170;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;230&lt;/x&gt;&lt;y&gt;120&lt;/y&gt;&lt;w&gt;190&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;-&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;170;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;230&lt;/x&gt;&lt;y&gt;120&lt;/y&gt;&lt;w&gt;190&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;-&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;170;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;230&lt;/x&gt;&lt;y&gt;120&lt;/y&gt;&lt;w&gt;190&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;-&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;170;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;230&lt;/x&gt;&lt;y&gt;120&lt;/y&gt;&lt;w&gt;190&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;-&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;170;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>520</y><w>190</w><h>80</h></coordinates><panel_attributes>Acronym
+--
+id: int
+shortkey: string
+description: string
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>160</y><w>190</w><h>220</h></coordinates><panel_attributes>nodes
+--
+id: int
+name: string
+domain: string
+serialnumber: string
+uuid:string
+machineid: string
+aquire_date: date
+eol_date: date
+support_contract: bigint
+status: bigint 
+description: text
+last_checkin: datetime </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>180</y><w>200</w><h>90</h></coordinates><panel_attributes>node_attrs
+--
+id: int
+node_id: int
+type_id: int
+value: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>190</y><w>90</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10;40;30;70;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>180</y><w>200</w><h>70</h></coordinates><panel_attributes>compute_attribute_types
+--
+id: int
+type_name: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>210</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>190</w><h>80</h></coordinates><panel_attributes>compute_groups
+--
+id: int
+name: string
+contact: string
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>300</y><w>200</w><h>130</h></coordinates><panel_attributes>node_operating_
+system_versions
+--
+id: int
+compute_id: Int
+os_id: int
+version_id: int
+last_checkin: date</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>510</y><w>200</w><h>110</h></coordinates><panel_attributes>node_software_package_versions
+--
+id: int
+node_software_package_id: int
+version: string
+release: string
+install_time: date</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>510</y><w>200</w><h>80</h></coordinates><panel_attributes>node_software_packages
+--
+id: int
+node_id: int
+software_packages_id: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1020</x><y>730</y><w>200</w><h>80</h></coordinates><panel_attributes>document_statuses
+--
+id:int
+name: string
+lifecycle: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>900</y><w>200</w><h>60</h></coordinates><panel_attributes>document_types
+--
+id: int
+name: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>800</y><w>190</w><h>110</h></coordinates><panel_attributes>documents
+--
+id: int
+title: string
+description:
+document_type: int
+document_status: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>400</y><w>200</w><h>60</h></coordinates><panel_attributes>operating_system_versions
+--
+id: int
+version_name: string
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>300</y><w>200</w><h>80</h></coordinates><panel_attributes>operatingsystems
+--
+id: int
+name: string
+icon_url: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>0</y><w>190</w><h>80</h></coordinates><panel_attributes>projects
+--
+id: int
+name: string
+contact: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>610</y><w>200</w><h>70</h></coordinates><panel_attributes>software_libraries
+--
+id: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>640</y><w>200</w><h>60</h></coordinates><panel_attributes>software_packages
+--
+id: int
+name: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>190</y><w>90</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10;40;160;70;160</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>320</y><w>90</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;40;10;40;40;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>350</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>73;80;40;80;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>190</y><w>90</w><h>390</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10;40;370;70;370</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>540</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>570</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;102;40;100;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>750</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>860</y><w>90</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;60;40;60;40;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>360</y><w>190</w><h>80</h></coordinates><panel_attributes>compute_nodes_documents
+--
+id: int
+compute_node_id: int
+documents_id: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>190</y><w>190</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;140;10;140;130;10;130;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>400</y><w>90</w><h>450</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;430;40;430;40;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>110</y><w>190</w><h>80</h></coordinates><panel_attributes>compute_group_nodes
+--
+id: int
+compute_group_id: int
+compute_node_id: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>140</y><w>90</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;40;40;40;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>70</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>630</y><w>190</w><h>250</h></coordinates><panel_attributes>changes
+--
+id: int
+title: text
+description: text
+ticket: text
+raisedate: date
+requester: int
+owner: int
+project: int
+severity: int
+risk: int
+chargecode: text
+outage: bool
+permanent: bool
+status: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>810</y><w>200</w><h>70</h></coordinates><panel_attributes>document_versions
+--
+id: int
+major: int
+minor: int
+version: string
+location: string
+document_version_state_id: int
+superseded_id: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>810</y><w>200</w><h>70</h></coordinates><panel_attributes>document_document_
+versions
+--
+id: int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>840</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>840</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element></diagram>

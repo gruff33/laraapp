@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Dashboard;
 use App\Livewire\Acronym;
 use App\Livewire\Change\ChangeMainView;
+use App\Livewire\Nodes\NodesMainView;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
-    Route::get('/test', Acronym::class)->name('test');
+    Route::get('/test',   Acronym::class)->name('test');
     Route::get('/change', ChangeMainView::class)->name('change');
+    Route::get('/nodes',  NodesMainView::class)->name('nodes');
 });
