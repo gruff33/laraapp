@@ -4,6 +4,7 @@ namespace App\Http\Controllers\api\v1;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Node;
 
 class NodeAPIController extends Controller
 {
@@ -13,6 +14,8 @@ class NodeAPIController extends Controller
     public function index()
     {
         //
+        return response()->json(node::all());
+        
     }
 
     /**
