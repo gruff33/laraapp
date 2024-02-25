@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MyKey=ivRkHGdxBxOEGiul9cdP5mki7241q5QC
-MyHost=http://192.168.1.100
+MyHost=http://192.168.1.193:8080
 
 H1='Content-type: application/json'
 H2='Accept: application/json'
@@ -21,6 +21,7 @@ JSON_DATA='{"name": "'${HN}'","domain": "'${DN}'","uuid":"'${sysuuid}'","osname"
 
 # echo Sending: ${JSON_DATA}
 
+echo curl -s -k -H "${H1}" -H "${H2}" -X POST -d "${JSON_DATA}" ${MyHost}/api/v1/node
 Asset_ID=`curl -s -k -H "${H1}" -H "${H2}" -X POST -d "${JSON_DATA}" ${MyHost}/api/v1/node|cut -d',' -f1|cut -d: -f2`
 rc=$?
 echo "Asset ID: $Asset_ID "
