@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('nodes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name');
             $table->unsignedBigInteger('domain')->nullable();
             $table->string('serialnumber')->nullable();
             $table->string('uuid')->nullable();

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\api\v1\NodeApiController;
 use App\Http\Controllers\api\v1\NodeAttrApiController;
 use App\Http\Controllers\api\v1\PackageApiController;
+use App\Http\Controllers\api\v1\DomainAPIController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Route::group(['prefix' => 'v1' ], function()
         'node'     => NodeAPIController::class,     
         'nodeattr' => NodeAttrAPIController::class,
         'package'  => PackageAPIController::class,
+        'domain'   => DomainAPIController::class
 //        'storage'  => StorageAPIController::class
     ]);
 });

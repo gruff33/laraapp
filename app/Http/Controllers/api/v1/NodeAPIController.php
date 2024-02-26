@@ -32,8 +32,6 @@ class NodeAPIController extends Controller
             'name' => $request->osname,
         ]);
        
-        echo "OS ID : ".$Os->id;
-        
         $OsVersion=OperatingSystemVersion::firstOrCreate([
             'name' => $request->osversion,
         ]);
@@ -70,6 +68,8 @@ class NodeAPIController extends Controller
     public function show(string $id)
     {
         //
+        $tmpNode=Node::where('id',$id)->firstOrFail();
+        return response()->json($tmpNode);
     }
 
     /**
