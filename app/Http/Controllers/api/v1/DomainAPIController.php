@@ -24,6 +24,10 @@ class DomainAPIController extends Controller
     public function store(Request $request)
     {
         //
+        $NewDomain=Domain::firstOrCreate([
+            'name' => $request->name
+        ]);
+        return response()->json($NewDomain);
     }
 
     /**

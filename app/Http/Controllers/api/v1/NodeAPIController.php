@@ -25,8 +25,6 @@ class NodeAPIController extends Controller
      */
     public function store(Request $request)
     {
-
-
         //
         $Os=OperatingSystem::firstOrCreate([
             'name' => $request->osname,
@@ -59,7 +57,6 @@ class NodeAPIController extends Controller
             'last_checkin' => now(),
         ]);
         return response()->json($NewAsset); 
-
     }
 
     /**
@@ -68,8 +65,7 @@ class NodeAPIController extends Controller
     public function show(string $id)
     {
         //
-        $tmpNode=Node::where('id',$id)->firstOrFail();
-        return response()->json($tmpNode);
+        return response()->json(Node::where('id',$id)->firstOrFail());
     }
 
     /**

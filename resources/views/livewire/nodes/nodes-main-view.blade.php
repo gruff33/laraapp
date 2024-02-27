@@ -1,7 +1,7 @@
 <div>
     {{-- If you look to others for fulfillment, you will never truly be fulfilled. --}}
     @forelse($NodeList as $NL)
-        <div class="flex w-full bg-blue-300 text-gray-800">
+        <div class="flex w-full bg-blue-300 text-gray-800 hover:bg-blue-100">
             <div class="w-1/12">
                 {{ $NL-> id }}
             </div>
